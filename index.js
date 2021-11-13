@@ -6,7 +6,7 @@ module.exports = {
 	rules: {
 		"prettier/prettier": true,
 		"color-hex-length": "long",
-		indentation: "tab",
+		"indentation": 4,
 		"max-nesting-depth": 4,
 		"order/properties-alphabetical-order": null,
 		"selector-no-qualifying-type": [ true, {
