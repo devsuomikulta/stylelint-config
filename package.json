@@ -1,6 +1,6 @@
 {
 	"name": "@suomikulta/stylelint-config",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"private": false,
 	"description": "Pluggable Styleling config for Finlandgems frontend",
 	"keywords": [
@@ -32,6 +32,8 @@
 		"eslint-plugin-import": "^2.17.2",
 		"husky": "^7.0.4",
 		"lint-staged": "^11.0.0",
+		"postcss": "^8.3.11",
+		"postcss-scss": "^4.0.2",
 		"prettier": "^2.0.5",
 		"stylelint": "^14.0.1",
 		"yarn": "^1.22.4"
@@ -56,7 +58,6 @@
 		]
 	},
 	"dependencies": {
-		"postcss": "^8.3.11",
 		"stylelint-config-sass-guidelines": "^9.0.1",
 		"stylelint-declaration-strict-value": "^1.8.0",
 		"stylelint-order": "^5.0.0",
