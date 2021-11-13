@@ -1,11 +1,10 @@
 module.exports = {
 	extends: [
-		// Reasonable config for CSS and SCSS
 		"stylelint-config-sass-guidelines"
 	],
 
 	rules: {
-		// Rule overrides for stylelint-config-sass-guidelines
+		"prettier/prettier": true,
 		"color-hex-length": "long",
 		indentation: "tab",
 		"max-nesting-depth": 4,
@@ -14,7 +13,6 @@ module.exports = {
 			"ignore": [ "attribute" ]
 		}],
 
-		// Additional rules
 		"declaration-no-important": true,
 		"font-family-name-quotes": "always-unless-keyword",
 		"font-weight-notation": "numeric",
@@ -23,6 +21,7 @@ module.exports = {
 		"string-quotes": "double",
 	},
 	plugins: [
+		"stylelint-prettier",
 		"stylelint-declaration-strict-value",
 		"stylelint-scss",
 		"stylelint-order",
