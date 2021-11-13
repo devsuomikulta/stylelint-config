@@ -1,6 +1,7 @@
 {
 	"name": "@suomikulta/stylelint-config",
-	"version": "0.0.1",
+	"version": "0.0.2",
+	"private": false,
 	"description": "Pluggable Styleling config for Finlandgems frontend",
 	"keywords": [
 		"stylelint",
@@ -17,6 +18,9 @@
 	"scripts": {
 		"format": "prettier --ignore-path .gitignore --write",
 		"lint": "eslint"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"peerDependencies": {
 		"stylelint": "^14.0.1"
