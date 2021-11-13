@@ -1,10 +1,10 @@
 module.exports = {
 	extends: [
+		"stylelint-prettier/recommended",
 		"stylelint-config-sass-guidelines"
 	],
 
 	rules: {
-		"prettier/prettier": true,
 		"color-hex-length": "long",
 		"indentation": 4,
 		"max-nesting-depth": 4,
@@ -21,7 +21,6 @@ module.exports = {
 		"string-quotes": "double",
 	},
 	plugins: [
-		"stylelint-prettier",
 		"stylelint-declaration-strict-value",
 		"stylelint-scss",
 		"stylelint-order",

@@ -1,6 +1,6 @@
 {
 	"name": "@suomikulta/stylelint-config",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"private": false,
 	"description": "Pluggable Styleling config for Finlandgems frontend",
 	"keywords": [
@@ -36,6 +36,7 @@
 		"postcss-scss": "^4.0.2",
 		"prettier": "^2.4.1",
 		"stylelint": "^14.0.1",
+		"stylelint-config-prettier": "^9.0.3",
 		"stylelint-prettier": "^2.0.0",
 		"yarn": "^1.22.4"
 	},
