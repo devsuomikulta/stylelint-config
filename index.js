@@ -8,9 +8,11 @@ module.exports = {
 		// Rule overrides for stylelint-config-sass-guidelines
 		"color-hex-length": "long",
 		indentation: "tab",
-		"max-nesting-depth": null,
+		"max-nesting-depth": 4,
 		"order/properties-alphabetical-order": null,
-		"selector-no-qualifying-type": null,
+		"selector-no-qualifying-type": [ true, {
+			"ignore": [ "attribute" ]
+		}],
 
 		// Additional rules
 		"declaration-no-important": true,
@@ -24,6 +26,5 @@ module.exports = {
 		"stylelint-declaration-strict-value",
 		"stylelint-scss",
 		"stylelint-order",
-
 	]
 };
