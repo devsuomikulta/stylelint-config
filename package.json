@@ -1,0 +1,61 @@
+{
+	"name": "@suomikulta/stylelint-config",
+	"version": "0.0.1",
+	"description": "Pluggable Styleling config for Finlandgems frontend",
+	"keywords": [
+		"stylelint",
+		"config",
+		"stylelint-config",
+		"css",
+		"scss",
+		"lint"
+	],
+	"main": "index.js",
+	"author": "Suomi Kulta <dev@suomikulta.fi>",
+	"repository": "github:devsuomikulta/stylelint-config",
+	"license": "MIT",
+	"scripts": {
+		"format": "prettier --ignore-path .gitignore --write",
+		"lint": "eslint"
+	},
+	"peerDependencies": {
+		"stylelint": "^14.0.1"
+	},
+	"devDependencies": {
+		"eslint": "7.32.0",
+		"eslint-config-airbnb-base": "14.2.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.17.2",
+		"husky": "^7.0.4",
+		"lint-staged": "^11.0.0",
+		"prettier": "^2.0.5",
+		"stylelint": "^14.0.1",
+		"yarn": "^1.22.4"
+	},
+	"files": [
+		"index.js"
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"yarn format",
+			"yarn lint",
+			"git add"
+		],
+		"*.{json,md,yml}": [
+			"yarn format",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"postcss": "^8.3.11",
+		"stylelint-config-sass-guidelines": "^9.0.1",
+		"stylelint-declaration-strict-value": "^1.8.0",
+		"stylelint-order": "^5.0.0",
+		"stylelint-scss": "^4.0.0"
+	}
+}
